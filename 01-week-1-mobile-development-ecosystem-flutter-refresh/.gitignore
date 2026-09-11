@@ -1,0 +1,14 @@
+# Simpan hanya berkas laporan dan hasil praktikum di repository.
+*
+
+!.gitignore
+!README.md
+
+!lib/
+!lib/**
+
+!test/
+!test/**
+
+!screenshots/
+!screenshots/**
