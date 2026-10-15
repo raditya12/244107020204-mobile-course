@@ -29,5 +29,6 @@ Repository praktikum Pemrograman Mobile.
 | --- | --- |
 | 1 | [Mobile Development Ecosystem & Flutter Refresh](01-week-1-mobile-development-ecosystem-flutter-refresh/README.md) |
 | 2 | [Declarative UI & Responsive Design](02-week-2-declarative-ui-responsive-design/README.md) |
+| 7 | [Clean Architecture (feature-first)](07-week-7-clean-architecture/week7_clean_notes/README.md) |
 
 Setiap folder mingguan berisi laporan, kode Flutter, pengujian, dan screenshot hasil praktikum. Petunjuk menjalankan proyek tersedia pada README masing-masing minggu.
