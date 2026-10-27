@@ -224,9 +224,7 @@ class NotesPage extends ConsumerWidget {
                                         .read(noteRepositoryProvider)
                                         .deleteNote(note.id!);
                                     if (result.failure != null) {
-                                      throw Exception(
-                                        result.failure!.message,
-                                      );
+                                      throw Exception(result.failure!.message);
                                     }
                                     ref.invalidate(notesProvider);
                                     ref.invalidate(dirtyCountProvider);

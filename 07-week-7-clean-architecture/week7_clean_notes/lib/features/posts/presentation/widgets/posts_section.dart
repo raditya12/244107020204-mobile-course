@@ -50,19 +50,21 @@ class PostsSection extends ConsumerWidget {
                 const Text(
                   'Cache kosong. Hubungkan jaringan untuk mengambil bacaan.',
                 ),
-              ...items.take(5).map(
-                (post) => Card(
-                  child: ListTile(
-                    leading: CircleAvatar(child: Text('${post.id}')),
-                    title: Text(post.title),
-                    subtitle: Text(
-                      post.body,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
+              ...items
+                  .take(5)
+                  .map(
+                    (post) => Card(
+                      child: ListTile(
+                        leading: CircleAvatar(child: Text('${post.id}')),
+                        title: Text(post.title),
+                        subtitle: Text(
+                          post.body,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
                     ),
                   ),
-                ),
-              ),
             ],
           ),
         ),

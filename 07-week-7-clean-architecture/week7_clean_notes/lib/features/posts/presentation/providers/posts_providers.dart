@@ -34,12 +34,14 @@ class PostsNotifier extends AsyncNotifier<List<Post>> {
   @override
   Future<List<Post>> build() {
     final offline = ref.watch(forceOfflineProvider);
-    return ref.watch(loadPostsProvider).call(
-      offline: offline,
-      refresh: () async {
-        if (ref.mounted) await refresh();
-      },
-    );
+    return ref
+        .watch(loadPostsProvider)
+        .call(
+          offline: offline,
+          refresh: () async {
+            if (ref.mounted) await refresh();
+          },
+        );
   }
 
   Future<void> refresh() async {
@@ -47,9 +49,11 @@ class PostsNotifier extends AsyncNotifier<List<Post>> {
     _refreshing = true;
     refreshError = null;
     try {
-      final result = await ref.read(refreshPostsProvider).call(
-        canRefresh: () => ref.mounted && !ref.read(forceOfflineProvider),
-      );
+      final result = await ref
+          .read(refreshPostsProvider)
+          .call(
+            canRefresh: () => ref.mounted && !ref.read(forceOfflineProvider),
+          );
       if (result.failure != null) {
         if (ref.mounted) {
           refreshError = 'Jaringan gagal. Cache lokal tetap tersedia.';

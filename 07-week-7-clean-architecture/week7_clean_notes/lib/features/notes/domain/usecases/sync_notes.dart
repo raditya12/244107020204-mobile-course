@@ -20,7 +20,9 @@ class SyncNotes {
     if (isOffline()) {
       return (
         count: 0,
-        failure: const NetworkFailure('Mode offline aktif. Sinkronisasi ditunda.'),
+        failure: const NetworkFailure(
+          'Mode offline aktif. Sinkronisasi ditunda.',
+        ),
       );
     }
 
@@ -54,9 +56,7 @@ class SyncNotes {
       if (isOffline()) {
         return (
           count: synced,
-          failure: const NetworkFailure(
-            'Koneksi dinonaktifkan saat upload.',
-          ),
+          failure: const NetworkFailure('Koneksi dinonaktifkan saat upload.'),
         );
       }
       final marked = await _repository.markSynced(note);

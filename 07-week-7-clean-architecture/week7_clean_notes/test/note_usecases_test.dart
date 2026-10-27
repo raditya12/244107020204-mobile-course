@@ -18,7 +18,8 @@ void main() {
 
     test('memangkas judul dan menyimpan catatan', () async {
       final repo = FakeNoteRepository();
-      final result = await AddNote(repo).call(title: '  Belanja  ', body: ' susu ');
+      final result = await AddNote(repo)
+          .call(title: '  Belanja  ', body: ' susu ');
       expect(result.failure, isNull);
       expect(result.note!.title, 'Belanja');
       expect(result.note!.body, 'susu');

@@ -23,9 +23,7 @@ class DarkModeNotifier extends AsyncNotifier<bool> {
     final next = !(state.value ?? false);
     state = const AsyncLoading();
     state = await AsyncValue.guard(() async {
-      final result = await ref
-          .read(prefsRepositoryProvider)
-          .setDarkMode(next);
+      final result = await ref.read(prefsRepositoryProvider).setDarkMode(next);
       if (result.failure != null) {
         throw Exception(result.failure!.message);
       }

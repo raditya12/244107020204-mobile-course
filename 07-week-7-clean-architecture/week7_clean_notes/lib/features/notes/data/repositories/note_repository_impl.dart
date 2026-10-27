@@ -64,7 +64,13 @@ class NoteRepositoryImpl implements NoteRepository {
         ).toMap(),
       );
       return (
-        note: Note(id: id, title: title, body: body, updatedAt: now, dirty: true),
+        note: Note(
+          id: id,
+          title: title,
+          body: body,
+          updatedAt: now,
+          dirty: true,
+        ),
         failure: null,
       );
     } catch (e) {
@@ -93,7 +99,13 @@ class NoteRepositoryImpl implements NoteRepository {
         whereArgs: [id],
       );
       return (
-        note: Note(id: id, title: title, body: body, updatedAt: now, dirty: true),
+        note: Note(
+          id: id,
+          title: title,
+          body: body,
+          updatedAt: now,
+          dirty: true,
+        ),
         failure: null,
       );
     } catch (e) {
@@ -139,7 +151,10 @@ class NoteRepositoryImpl implements NoteRepository {
       );
       return (ok: true, failure: null);
     } catch (e) {
-      return (ok: false, failure: LocalFailure('Gagal menandai tersinkron: $e'));
+      return (
+        ok: false,
+        failure: LocalFailure('Gagal menandai tersinkron: $e'),
+      );
     }
   }
 }
