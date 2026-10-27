@@ -21,7 +21,7 @@ baru; fokusnya audit, review, perbaikan kecil, dan bukti kualitas.
 | `dart format` | Lulus | 13 file dirapikan lebih dulu; gate sekarang exit 0. |
 | `flutter test` | Lulus | 25 test (naik dari 23), semuanya hijau. |
 | Struktur feature-first | Lulus | Tiga grep sterility menghasilkan 0 match. |
-| PR kecil + review | Lulus (lokal) | 1 PR, 76 insertions / 13 deletions, 2 blocker resolved. |
+| PR kecil + review | Lulus (lokal) | PR kode 76 insertions / 13 deletions (+ dokumentasi), 2 blocker resolved. |
 | Issue + PR GitHub | Tertunda | Draft siap di [`docs/issue-pr-draft.md`](docs/issue-pr-draft.md). |
 | `main` tidak disentuh | Lulus | `main` tetap di `c1aed75`; integrasi di `develop`. |
 
@@ -33,7 +33,7 @@ baru; fokusnya audit, review, perbaikan kecil, dan bukti kualitas.
 | Branch | `fix/notes-delete-layer` (dari `develop`) | Selesai |
 | Commit kode | `refactor(notes): pindahkan hapus catatan dari widget ke provider + test` | Selesai |
 | Commit dokumentasi | `docs(week8): laporan mid project review + verifikasi AI` | Selesai |
-| Review | 5 komentar (2 blocker, 3 saran); 2 resolved, 1 ditolak, 1 ditunda, 1 ditolak | Approve |
+| Review | 5 komentar (2 blocker, 3 saran); 2 resolved, 2 ditolak, 1 ditunda | Approve |
 | Merge | `--no-ff` ke `develop` | Selesai lokal |
 | CI | `.github/workflows/ci.yml` (format, analyze, test) | Siap, menunggu push |
 

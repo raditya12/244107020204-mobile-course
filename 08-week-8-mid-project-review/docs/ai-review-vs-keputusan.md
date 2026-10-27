@@ -19,7 +19,7 @@ Output awal AI: [`02-output-ai.md`](02-output-ai.md).
 
 | # | Usulan AI | Keputusan final | Alasan teknis dan bukti |
 |---|---|---|---|
-| 1 | Buat `NotesActions` provider untuk hapus catatan | **Diterima dan diterapkan** | `notes_page.dart` tidak lagi menyentuh `noteRepositoryProvider`. Aksi dan invalidasi dipindah ke `notes_actions.dart:13-22`. |
+| 1 | Buat `NotesActions` provider untuk hapus catatan | **Diterima dan diterapkan** | `notes_page.dart` tidak lagi menyentuh `noteRepositoryProvider`. Aksi dan invalidasi dipindah ke `notes_actions.dart:14-22`. |
 | 2 | Presentation mengimpor `NoteModel`/`sqflite` | **Ditolak (false positive)** | Grep presentation untuk `NoteModel`, `sqflite`, `Dio(`, `openDatabase` menghasilkan 0 match. Presentation hanya memakai entity `Note` dari domain. |
 | 3 | Tambah test hapus sukses dan gagal | **Diterima dan diterapkan** | `test/notes_actions_test.dart` berisi 2 test dengan `FakeNoteRepository`. Total test naik dari 23 menjadi 25. |
 | 4 | `dirtyCountProvider` menelan failure | **Diterima sebagai temuan, ditunda** | Temuan valid (`notes_providers.dart:49-51`). Tidak dimasukkan ke PR ini karena mengubah kontrak UI dan butuh desain status error; dicatat sebagai issue lanjutan. |
