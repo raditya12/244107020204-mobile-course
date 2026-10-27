@@ -34,10 +34,8 @@ void main() {
     );
     var refreshes = 0;
 
-    final cached = await LoadPosts(repo).call(
-      offline: true,
-      refresh: () async => refreshes++,
-    );
+    final cached = await LoadPosts(repo)
+        .call(offline: true, refresh: () async => refreshes++);
     await Future<void>.delayed(Duration.zero);
 
     expect(cached.single.title, 'Cache lama');

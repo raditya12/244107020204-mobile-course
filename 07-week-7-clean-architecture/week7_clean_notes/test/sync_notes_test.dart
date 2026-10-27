@@ -52,7 +52,14 @@ void main() {
 
   test('edit ketika upload berlangsung tetap dirty', () async {
     final repo = FakeNoteRepository(
-      seed: [Note(id: 1, title: 'Versi awal', updatedAt: DateTime(2026), dirty: true)],
+      seed: [
+        Note(
+          id: 1,
+          title: 'Versi awal',
+          updatedAt: DateTime(2026),
+          dirty: true,
+        ),
+      ],
     );
     final result = await SyncNotes(
       repo,

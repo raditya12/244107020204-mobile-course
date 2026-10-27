@@ -7,11 +7,8 @@ import 'package:week7_clean_notes/features/settings/domain/repositories/prefs_re
 
 /// Repository catatan palsu untuk pengujian domain murni.
 class FakeNoteRepository implements NoteRepository {
-  FakeNoteRepository({
-    List<Note>? seed,
-    this.fetchFailure,
-    this.writeFailure,
-  }) : _notes = [...?seed];
+  FakeNoteRepository({List<Note>? seed, this.fetchFailure, this.writeFailure})
+    : _notes = [...?seed];
 
   final List<Note> _notes;
   final Failure? fetchFailure;
@@ -134,7 +131,9 @@ class FakePostRepository implements PostRepository {
   }
 
   @override
-  Future<({bool ok, Failure? failure})> saveCachedPosts(List<Post> posts) async {
+  Future<({bool ok, Failure? failure})> saveCachedPosts(
+    List<Post> posts,
+  ) async {
     saved = posts;
     cached = posts;
     return (ok: true, failure: null);

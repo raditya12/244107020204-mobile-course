@@ -51,7 +51,9 @@ class PostRepositoryImpl implements PostRepository {
         'https://jsonplaceholder.typicode.com/posts',
       );
       final posts = response.data!
-          .map((row) => PostModel.fromMap(row as Map<String, dynamic>).toEntity())
+          .map(
+            (row) => PostModel.fromMap(row as Map<String, dynamic>).toEntity(),
+          )
           .toList();
       return (posts: posts, failure: null);
     } on DioException catch (e) {
@@ -68,7 +70,9 @@ class PostRepositoryImpl implements PostRepository {
   }
 
   @override
-  Future<({bool ok, Failure? failure})> saveCachedPosts(List<Post> posts) async {
+  Future<({bool ok, Failure? failure})> saveCachedPosts(
+    List<Post> posts,
+  ) async {
     try {
       final db = await _openDb();
       await db.transaction((txn) async {
@@ -78,7 +82,11 @@ class PostRepositoryImpl implements PostRepository {
           batch.insert('cached_posts', {
             'id': post.id,
             'payload': jsonEncode(
-              PostModel(id: post.id, title: post.title, body: post.body).toMap(),
+              PostModel(
+                id: post.id,
+                title: post.title,
+                body: post.body,
+              ).toMap(),
             ),
             'cached_at': DateTime.now().toUtc().toIso8601String(),
           });

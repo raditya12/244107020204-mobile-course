@@ -21,12 +21,14 @@ final routerProvider = Provider<GoRouter>((ref) {
   final router = GoRouter(
     routes: [
       GoRoute(path: AppRoutes.notes, builder: (_, _) => const NotesPage()),
-      GoRoute(path: AppRoutes.settings, builder: (_, _) => const SettingsPage()),
+      GoRoute(
+        path: AppRoutes.settings,
+        builder: (_, _) => const SettingsPage(),
+      ),
       GoRoute(
         path: AppRoutes.noteDetail,
-        builder: (_, state) => NoteDetailPage(
-          id: parseNoteId(state.pathParameters['id']) ?? -1,
-        ),
+        builder: (_, state) =>
+            NoteDetailPage(id: parseNoteId(state.pathParameters['id']) ?? -1),
       ),
     ],
   );

@@ -61,9 +61,9 @@ class SyncNotifier extends AsyncNotifier<int> {
     if (state.isLoading) return;
     state = const AsyncLoading();
     state = await AsyncValue.guard(() async {
-      final result = await ref.read(syncNotesProvider).call(
-        isOffline: () => ref.read(forceOfflineProvider),
-      );
+      final result = await ref
+          .read(syncNotesProvider)
+          .call(isOffline: () => ref.read(forceOfflineProvider));
       if (result.failure != null) throw Exception(result.failure!.message);
       return result.count;
     });
