@@ -90,7 +90,7 @@ Issue dan PR sudah dipublikasikan; template tersedia di
 | `flutter test` hijau | Lulus | 25 test, `All tests passed!` (naik dari 23). |
 | PR kecil dan commit jelas | Lulus | PR kode 76 insertions / 13 deletions; commit conventional. |
 | README + screenshot + cara menjalankan | Lulus | `README.md` Week 8 + folder `screenshots/` + langkah `flutter pub get`/`run`/`test`. |
-| Komentar review ditindaklanjuti | Lulus | 2 blocker resolved; 3 saran: 2 ditolak dan 1 ditunda, semuanya dengan alasan di [`peer-review.md`](peer-review.md). |
+| Komentar review ditindaklanjuti | Lulus | 2 blocker resolved; 3 saran: 2 ditolak dan 1 ditunda, semuanya dengan alasan di [`peer-review.md`](peer-review.md). Review GitHub disubmit sebagai COMMENT karena self-approve dilarang. |
 | Review AI diverifikasi | Lulus | 5 temuan + 1 tambahan; 2 diterapkan, 1 false positive ditolak, 1 over-engineering ditolak, 2 ditunda. Lihat [`ai-review-vs-keputusan.md`](ai-review-vs-keputusan.md). |
 | CI menolak PR kotor | Lulus (siap) | `.github/workflows/ci.yml` menjalankan format, analyze, dan test. |
 | `main` tidak disentuh | Lulus | `main` tetap di `c1aed75`; semua commit baru ada di `develop`. |

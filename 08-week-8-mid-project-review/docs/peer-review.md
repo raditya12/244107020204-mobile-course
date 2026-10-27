@@ -98,6 +98,11 @@ tulis dan tidak memegang state. Nama `Controller` akan menyesatkan.
 **Approve** setelah komentar 1 dan 2 diperbaiki. Komentar 3 dan 5 ditolak
 dengan alasan tertulis; komentar 4 ditunda dan dicatat sebagai tindak lanjut.
 
+Catatan GitHub: tombol **Approve** ditolak karena PR milik akun sendiri
+(`Can not approve your own pull request`). Review tetap disubmit sebagai
+**COMMENT** dengan 4 komentar di diff, lalu PR di-merge setelah CI `verify`
+hijau (commit merge `9a5a657`).
+
 Reviewer menjalankan sendiri:
 
 ```text

@@ -34,8 +34,8 @@ baru; fokusnya audit, review, perbaikan kecil, dan bukti kualitas.
 | Branch | `fix/notes-delete-layer` (dari `develop`) | Selesai |
 | Commit kode | `refactor(notes): pindahkan hapus catatan dari widget ke provider + test` | Selesai |
 | Commit dokumentasi | `docs(week8): laporan mid project review + verifikasi AI` | Selesai |
-| Review | 5 komentar (2 blocker, 3 saran); 2 resolved, 2 ditolak, 1 ditunda | Approve |
-| Merge | `--no-ff` ke `develop` | Selesai |
+| Review | 5 komentar (2 blocker, 3 saran); 2 resolved, 2 ditolak, 1 ditunda | Approve (review COMMENT; GitHub melarang self-approve) |
+| Merge | PR #2 ke `develop`, commit `9a5a657` | Selesai |
 | CI | `.github/workflows/ci.yml` (format, analyze, test) | Berjalan pada PR |
 
 Alur yang dipakai:
