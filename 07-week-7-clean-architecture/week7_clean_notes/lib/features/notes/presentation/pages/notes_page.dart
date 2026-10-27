@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../../../app/providers.dart';
 import '../../../posts/presentation/widgets/posts_section.dart';
 import '../../domain/entities/note.dart';
+import '../providers/notes_actions.dart';
 import '../providers/notes_providers.dart';
 import '../widgets/note_tile.dart';
 
@@ -220,17 +221,9 @@ class NotesPage extends ConsumerWidget {
                                 onEdit: () => _edit(context, ref, note),
                                 onDelete: () async {
                                   try {
-                                    final result = await ref
-                                        .read(noteRepositoryProvider)
-                                        .deleteNote(note.id!);
-                                    if (result.failure != null) {
-                                      throw Exception(result.failure!.message);
-                                    }
-                                    ref.invalidate(notesProvider);
-                                    ref.invalidate(dirtyCountProvider);
-                                    ref.invalidate(
-                                      noteDetailProvider(note.id!),
-                                    );
+                                    await ref
+                                        .read(notesActionsProvider)
+                                        .delete(note.id!);
                                   } catch (_) {
                                     if (context.mounted) {
                                       ScaffoldMessenger.of(context)
