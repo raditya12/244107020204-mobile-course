@@ -1,7 +1,10 @@
-# Draft issue dan Pull Request (untuk dijalankan nanti)
+# Draft issue dan Pull Request
 
-Push ke GitHub sengaja ditunda. Setelah siap, gunakan teks di bawah agar
-issue/PR sesuai dengan commit lokal yang sudah dibuat.
+Issue [#1](https://github.com/raditya12/244107020204-mobile-course/issues/1)
+dan Pull Request
+[#2](https://github.com/raditya12/244107020204-mobile-course/pull/2) sudah
+dibuat dari teks di bawah. Dokumen ini disimpan sebagai template untuk PR
+berikutnya.
 
 ## Issue #1
 
@@ -81,23 +84,21 @@ Manual:
 Closes #1
 ```
 
-## Perintah push dan pembuatan PR
+## Perintah yang sudah dijalankan
 
 ```powershell
 # dari root repository
-git push -u origin develop
+git push origin 02fd10c:refs/heads/develop
 git push -u origin fix/notes-delete-layer
 ```
 
-Lalu buka:
+PR dibuat melalui GitHub MCP:
 
 ```text
-https://github.com/raditya12/244107020204-mobile-course/compare/develop...fix/notes-delete-layer
+https://github.com/raditya12/244107020204-mobile-course/pull/2
 ```
 
-`gh` CLI tidak terpasang di mesin ini, jadi pembuatan PR dilakukan lewat
-web GitHub. Setelah PR dibuat, CI `.github/workflows/ci.yml` akan berjalan
-(format, analyze, test).
+CI `.github/workflows/ci.yml` berjalan pada PR (format, analyze, test).
 
 ## Setelah PR di-merge
 

@@ -1,10 +1,12 @@
-# Peer review (simulasi lokal)
+# Peer review
 
-Status: **disimulasikan lokal** karena push issue/PR ke GitHub ditunda.
+Status: review dilakukan pada Pull Request
+[#2](https://github.com/raditya12/244107020204-mobile-course/pull/2).
 Diff yang direview: `develop..fix/notes-delete-layer` pada project
 `07-week-7-clean-architecture/week7_clean_notes`.
 
 Issue yang menjadi dasar review:
+[#1](https://github.com/raditya12/244107020204-mobile-course/issues/1).
 
 > **#1 fix(notes): hapus catatan masih memanggil repository langsung dari widget**
 >

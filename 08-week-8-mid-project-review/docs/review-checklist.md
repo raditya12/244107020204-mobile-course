@@ -75,8 +75,9 @@ fix/notes-delete-layer
            -> docs(week8): laporan mid project review + verifikasi AI
 ```
 
-Branch fitur di-merge ke `develop` dengan `--no-ff`. Push ke GitHub dan
-pembuatan PR ditunda; draft issue/PR tersedia di
+Branch fitur di-merge ke `develop` melalui Pull Request
+[#2](https://github.com/raditya12/244107020204-mobile-course/pull/2).
+Issue dan PR sudah dipublikasikan; template tersedia di
 [`issue-pr-draft.md`](issue-pr-draft.md).
 
 ## 4. Checklist kesiapan paruh semester
@@ -93,7 +94,7 @@ pembuatan PR ditunda; draft issue/PR tersedia di
 | Review AI diverifikasi | Lulus | 5 temuan + 1 tambahan; 2 diterapkan, 1 false positive ditolak, 1 over-engineering ditolak, 2 ditunda. Lihat [`ai-review-vs-keputusan.md`](ai-review-vs-keputusan.md). |
 | CI menolak PR kotor | Lulus (siap) | `.github/workflows/ci.yml` menjalankan format, analyze, dan test. |
 | `main` tidak disentuh | Lulus | `main` tetap di `c1aed75`; semua commit baru ada di `develop`. |
-| Issue + PR GitHub | Tertunda | Push/PR ditunda sesuai instruksi; draft siap di `docs/issue-pr-draft.md`. |
+| Issue + PR GitHub | Lulus | [Issue #1](https://github.com/raditya12/244107020204-mobile-course/issues/1) dan [PR #2](https://github.com/raditya12/244107020204-mobile-course/pull/2) sudah dibuat dan di-merge ke `develop`. |
 
 ## 5. Bukti mesin
 
@@ -132,7 +133,9 @@ Get-ChildItem -Path lib\features\*\presentation\pages,
 
 ## 7. Kesimpulan
 
-Kesiapan paruh semester: **LULUS pada level lokal**. Aplikasi berjalan identik
-dengan akhir Minggu 7, tiga pemeriksaan mesin hijau, satu PR kecil sudah
-di-review dan di-merge ke `develop`, serta temuan AI terdokumentasi dengan
-bukti. Satu-satunya butir tertunda adalah publikasi issue/PR ke GitHub.
+Kesiapan paruh semester: **LULUS**. Aplikasi berjalan identik dengan akhir
+Minggu 7, tiga pemeriksaan mesin hijau, satu PR kecil sudah di-review dan
+di-merge ke `develop` di GitHub, serta temuan AI terdokumentasi dengan bukti.
+Issue [#1](https://github.com/raditya12/244107020204-mobile-course/issues/1)
+dan PR [#2](https://github.com/raditya12/244107020204-mobile-course/pull/2)
+sudah dipublikasikan.

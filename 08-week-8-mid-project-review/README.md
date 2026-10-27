@@ -22,20 +22,21 @@ baru; fokusnya audit, review, perbaikan kecil, dan bukti kualitas.
 | `flutter test` | Lulus | 25 test (naik dari 23), semuanya hijau. |
 | Struktur feature-first | Lulus | Tiga grep sterility menghasilkan 0 match. |
 | PR kecil + review | Lulus (lokal) | PR kode 76 insertions / 13 deletions (+ dokumentasi), 2 blocker resolved. |
-| Issue + PR GitHub | Tertunda | Draft siap di [`docs/issue-pr-draft.md`](docs/issue-pr-draft.md). |
+| Issue + PR GitHub | Lulus | [Issue #1](https://github.com/raditya12/244107020204-mobile-course/issues/1) dan [PR #2](https://github.com/raditya12/244107020204-mobile-course/pull/2) sudah dipublikasikan dan di-merge ke `develop`. |
 | `main` tidak disentuh | Lulus | `main` tetap di `c1aed75`; integrasi di `develop`. |
 
 ## Peta issue dan Pull Request
 
 | Item | Isi | Status |
 |---|---|---|
-| Issue #1 | `fix(notes): hapus catatan masih memanggil repository langsung dari widget` | Draft lokal, siap dipublikasikan |
+| [Issue #1](https://github.com/raditya12/244107020204-mobile-course/issues/1) | `fix(notes): hapus catatan masih memanggil repository langsung dari widget` | Dibuat di GitHub |
+| [PR #2](https://github.com/raditya12/244107020204-mobile-course/pull/2) | `refactor(notes): pindahkan hapus catatan dari widget ke provider + test` | Dibuat, direview, di-merge |
 | Branch | `fix/notes-delete-layer` (dari `develop`) | Selesai |
 | Commit kode | `refactor(notes): pindahkan hapus catatan dari widget ke provider + test` | Selesai |
 | Commit dokumentasi | `docs(week8): laporan mid project review + verifikasi AI` | Selesai |
 | Review | 5 komentar (2 blocker, 3 saran); 2 resolved, 2 ditolak, 1 ditunda | Approve |
-| Merge | `--no-ff` ke `develop` | Selesai lokal |
-| CI | `.github/workflows/ci.yml` (format, analyze, test) | Siap, menunggu push |
+| Merge | `--no-ff` ke `develop` | Selesai |
+| CI | `.github/workflows/ci.yml` (format, analyze, test) | Berjalan pada PR |
 
 Alur yang dipakai:
 
@@ -215,8 +216,11 @@ jobs:
 
 ## Catatan
 
-Push ke GitHub dan pembuatan issue/PR **ditunda**. Semua langkah, judul, body,
-dan perintah yang dibutuhkan sudah disiapkan di
-[`docs/issue-pr-draft.md`](docs/issue-pr-draft.md). `main` tidak disentuh dan
-dua file yang sudah termodifikasi sebelum praktikum (`.vscode/settings.json`
-dan README Week 5) tidak ikut di-commit.
+Issue [#1](https://github.com/raditya12/244107020204-mobile-course/issues/1)
+dan Pull Request
+[#2](https://github.com/raditya12/244107020204-mobile-course/pull/2) sudah
+dipublikasikan ke GitHub dan di-merge ke `develop`. Dokumen
+[`docs/issue-pr-draft.md`](docs/issue-pr-draft.md) tetap disimpan sebagai
+template untuk PR berikutnya. `main` tidak disentuh dan dua file yang sudah
+termodifikasi sebelum praktikum (`.vscode/settings.json` dan README Week 5)
+tidak ikut di-commit.
