@@ -1,7 +1,7 @@
 # Hasil Testing — Jobsheet 9
 
 **Tanggal:** 27 Oktober 2026
-**Project:** `week9_ai_notes`
+**Project:** `09-week-9-ai-assisted-development`
 **Fokus:** pencarian judul catatan + empty state
 
 ## Ringkasan

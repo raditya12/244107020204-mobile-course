@@ -1,7 +1,7 @@
 # Verifikasi AI dan keputusan final
 
 Tanggal verifikasi: 27 Oktober 2026.
-Basis kode: `07-week-7-clean-architecture/week7_clean_notes`.
+Basis kode: `07-week-7-clean-architecture`.
 Output awal AI: [`02-output-ai.md`](02-output-ai.md).
 
 ## Checklist verifikasi jobsheet
@@ -75,7 +75,7 @@ Get-ChildItem -Path lib\features\*\presentation -Recurse -Filter *.dart |
 
 ## Bukti mesin
 
-Dijalankan pada `07-week-7-clean-architecture/week7_clean_notes`:
+Dijalankan pada `07-week-7-clean-architecture`:
 
 ```text
 flutter analyze

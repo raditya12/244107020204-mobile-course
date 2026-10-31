@@ -2,7 +2,7 @@
 
 Tanggal: 27 Oktober 2026.
 Asisten: OpenCode.
-Project yang direview: `07-week-7-clean-architecture/week7_clean_notes`
+Project yang direview: `07-week-7-clean-architecture`
 (hasil refactor Clean Architecture Minggu 7).
 
 ## Prompt dari jobsheet
@@ -19,7 +19,7 @@ Berikan 5 temuan teratas + level (blocker/saran)
 ## Prompt yang benar-benar dipakai
 
 ```text
-Review perubahan pada project Flutter week7_clean_notes sebagai senior
+Review perubahan pada project Flutter Minggu 7 sebagai senior
 Flutter developer.
 
 Konteks:

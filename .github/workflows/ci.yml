@@ -3,7 +3,7 @@ name: ci
 on:
   pull_request:
   push:
-    branches: [develop]
+    branches: [main]
 
 jobs:
   verify:
@@ -12,8 +12,8 @@ jobs:
       fail-fast: false
       matrix:
         project:
-          - 07-week-7-clean-architecture/week7_clean_notes
-          - 09-week-9-ai-assisted-development/week9_ai_notes
+          - 07-week-7-clean-architecture
+          - 09-week-9-ai-assisted-development
     defaults:
       run:
         working-directory: ${{ matrix.project }}

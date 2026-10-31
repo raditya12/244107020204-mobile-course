@@ -6,7 +6,7 @@
 
 ### Step 1 — Selamat datang dan persiapan
 
-Project `week5_offline_notes` disiapkan beserta paket yang dibutuhkan. Aplikasi diuji melalui Chrome, kemudian dipasang dan digunakan pada HP Android. Screenshot dari kedua platform ditampilkan dalam laporan ini.
+Project Offline Notes (`week5_offline_notes`) disiapkan beserta paket yang dibutuhkan. Aplikasi diuji melalui Chrome, kemudian dipasang dan digunakan pada HP Android. Screenshot dari kedua platform ditampilkan dalam laporan ini.
 
 **Hasil:** aplikasi dapat dibuka dan menampilkan halaman catatan. Saat belum ada data, muncul pesan bahwa catatan masih kosong.
 
@@ -161,7 +161,7 @@ Aplikasi **Offline Notes** menggabungkan hasil seluruh praktikum.
 
 Aplikasi sudah memiliki pengaturan tema, penyimpanan catatan, cache bacaan, dan simulasi sinkronisasi. Hasil pengujian offline dan sinkronisasi dilengkapi screenshot dari Chrome serta HP Android. Dokumentasi AI Challenge dan hasil testing juga sudah disimpan. Commit dan push repository belum dilakukan pada sesi ini.
 
-Project berada di `05-week-5-local-storage-offline-first/week5_offline_notes/`. Di dalamnya tersedia `lib/`, `test/`, `docs/`, `screenshots/`, dan README ini.
+Project berada di `05-week-5-local-storage-offline-first/`. Di dalamnya tersedia `lib/`, `test/`, `docs/`, `screenshots/`, dan README ini.
 
 #### Refleksi
 

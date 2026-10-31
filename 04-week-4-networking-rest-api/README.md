@@ -49,7 +49,7 @@ Setelah mencoba kembali, komentar berhasil dimuat.
 ![Komentar setelah mencoba kembali](screenshots/step-6-comments-retry-success.png)
 
 Catatan penggunaan AI dan hasil pemeriksaannya disimpan di
-[folder docs](week4_api/docs/).
+[folder docs](docs/).
 
 ## Step 7 — Refactoring dan Testing
 

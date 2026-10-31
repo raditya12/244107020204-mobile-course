@@ -2,15 +2,15 @@
 
 **Tanggal:** 27 Oktober 2026
 **Asisten:** OpenCode (AI coding assistant)
-**Project basis:** `07-week-7-clean-architecture/week7_clean_notes`
-**Project kerja:** `09-week-9-ai-assisted-development/week9_ai_notes`
+**Project basis:** `07-week-7-clean-architecture` (Minggu 7)
+**Project kerja:** `09-week-9-ai-assisted-development`
 **Fitur:** pencarian judul catatan + empty state
 
 ## 1. Prompt 5 slot
 
 ```text
 Peran: senior Flutter developer yang disiplin Clean Architecture.
-Konteks: project week9_ai_notes (salinan week7_clean_notes), feature-first,
+Konteks: project Week 9 (salinan project Minggu 7), feature-first,
 presentation -> domain <- data, Riverpod 3, SQLite, Dio, GoRouter.
 Tugas: tambah pencarian judul catatan + empty state.
 Batas: jangan ubah arsitektur; jangan panggil SQLite/Dio dari widget;

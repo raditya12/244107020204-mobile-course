@@ -8,9 +8,10 @@
 **Kelas:** TI-3E
 **Tanggal:** 27 Oktober 2026
 
-Project kerja: [`week9_ai_notes`](week9_ai_notes) — salinan project
-`week7_clean_notes` (Clean Architecture Minggu 7) yang ditambah satu fitur
-kecil dengan bantuan AI. Week 9 tidak membuat aplikasi baru.
+Project kerja: kode aplikasi di folder ini (lihat [`lib/`](lib)), salinan
+project Minggu 7 ([`07-week-7-clean-architecture`](../07-week-7-clean-architecture))
+yang ditambah satu fitur kecil dengan bantuan AI. Week 9 tidak membuat aplikasi
+baru.
 
 ## Fitur yang ditambahkan
 
@@ -27,7 +28,7 @@ Pencarian judul catatan pada halaman Offline Notes:
 
 | Aspek | Status | Bukti |
 |---|---|---|
-| Fitur kecil dengan AI (search) + empty state | Lulus | [`search_notes.dart`](week9_ai_notes/lib/features/notes/domain/usecases/search_notes.dart) dan [`notes_page.dart`](week9_ai_notes/lib/features/notes/presentation/pages/notes_page.dart) |
+| Fitur kecil dengan AI (search) + empty state | Lulus | [`search_notes.dart`](lib/features/notes/domain/usecases/search_notes.dart) dan [`notes_page.dart`](lib/features/notes/presentation/pages/notes_page.dart) |
 | Prompt 5 slot + konteks | Lulus | [`docs/ai-log.md`](docs/ai-log.md) |
 | Output awal AI disimpan | Lulus | [`docs/ai-log.md`](docs/ai-log.md#2-output-awal-ai) |
 | 1 temuan AI terbukti benar lalu diperbaiki | Lulus | Test case-sensitive merah, lalu hijau |
@@ -54,7 +55,7 @@ Pencarian judul catatan pada halaman Offline Notes:
 ## Cara menjalankan
 
 ```bash
-cd 09-week-9-ai-assisted-development/week9_ai_notes
+cd 09-week-9-ai-assisted-development
 flutter pub get
 flutter run -d chrome
 ```
@@ -91,8 +92,8 @@ flutter test
 
 31 test terdiri dari 25 test lama Minggu 7 dan 6 test baru:
 
-- 5 test domain di [`test/search_notes_test.dart`](week9_ai_notes/test/search_notes_test.dart);
-- 1 widget test di [`test/search_widget_test.dart`](week9_ai_notes/test/search_widget_test.dart).
+- 5 test domain di [`test/search_notes_test.dart`](test/search_notes_test.dart);
+- 1 widget test di [`test/search_widget_test.dart`](test/search_widget_test.dart).
 
 ## Alur AI-assisted development
 
@@ -151,7 +152,7 @@ Output merah:
 ```
 
 Perbaikan: query dan judul sama-sama di-`toLowerCase()` di
-[`search_notes.dart:10-14`](week9_ai_notes/lib/features/notes/domain/usecases/search_notes.dart).
+[`search_notes.dart:10-14`](lib/features/notes/domain/usecases/search_notes.dart).
 Setelah perbaikan, 6 test search hijau dan seluruh suite menjadi 31 test hijau.
 
 ## Tabel temuan AI vs keputusan
@@ -184,23 +185,22 @@ lewat UI, bukan di-seed langsung ke database.
 ```text
 09-week-9-ai-assisted-development/
 ├── README.md
+├── lib/features/notes/
+│   ├── domain/usecases/search_notes.dart
+│   └── presentation/
+│       ├── pages/notes_page.dart
+│       ├── providers/notes_providers.dart
+│       └── widgets/notes_search_field.dart
+├── test/
+│   ├── search_notes_test.dart
+│   └── search_widget_test.dart
 ├── docs/
 │   ├── ai-log.md
 │   └── testing.md
-├── screenshots/
-│   ├── 00-daftar-catatan.png
-│   ├── 01-search-cocok.png
-│   └── 02-search-kosong.png
-└── week9_ai_notes/
-    ├── lib/features/notes/
-    │   ├── domain/usecases/search_notes.dart
-    │   └── presentation/
-    │       ├── pages/notes_page.dart
-    │       ├── providers/notes_providers.dart
-    │       └── widgets/notes_search_field.dart
-    └── test/
-        ├── search_notes_test.dart
-        └── search_widget_test.dart
+└── screenshots/
+    ├── 00-daftar-catatan.png
+    ├── 01-search-cocok.png
+    └── 02-search-kosong.png
 ```
 
 ## Refleksi

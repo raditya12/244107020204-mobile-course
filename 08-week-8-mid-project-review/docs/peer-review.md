@@ -3,7 +3,7 @@
 Status: review dilakukan pada Pull Request
 [#2](https://github.com/raditya12/244107020204-mobile-course/pull/2).
 Diff yang direview: `develop..fix/notes-delete-layer` pada project
-`07-week-7-clean-architecture/week7_clean_notes`.
+`07-week-7-clean-architecture`.
 
 Issue yang menjadi dasar review:
 [#1](https://github.com/raditya12/244107020204-mobile-course/issues/1).

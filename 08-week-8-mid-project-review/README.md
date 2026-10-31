@@ -8,7 +8,7 @@
 **Kelas:** TI-3E
 **Tanggal:** 27 Oktober 2026
 
-Project yang direview: [`week7_clean_notes`](../07-week-7-clean-architecture/week7_clean_notes)
+Project yang direview: [project Minggu 7](../07-week-7-clean-architecture)
 (hasil refactor Clean Architecture Minggu 7). Week 8 tidak membuat aplikasi
 baru; fokusnya audit, review, perbaikan kecil, dan bukti kualitas.
 
@@ -76,7 +76,7 @@ main (tidak disentuh)
 ## Cara menjalankan
 
 ```bash
-cd 07-week-7-clean-architecture/week7_clean_notes
+cd 07-week-7-clean-architecture
 flutter pub get
 flutter run -d chrome
 ```
@@ -183,7 +183,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 07-week-7-clean-architecture/week7_clean_notes
+        working-directory: 07-week-7-clean-architecture
     steps:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2

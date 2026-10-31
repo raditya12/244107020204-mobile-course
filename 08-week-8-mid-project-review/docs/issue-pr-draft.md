@@ -62,7 +62,7 @@ invalidasi state sendiri (lihat issue #1).
 
 ## Cara uji
 ```bash
-cd 07-week-7-clean-architecture/week7_clean_notes
+cd 07-week-7-clean-architecture
 flutter pub get
 dart format --output=none --set-exit-if-changed lib test
 flutter analyze

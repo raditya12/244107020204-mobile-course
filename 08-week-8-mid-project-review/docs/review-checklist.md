@@ -1,7 +1,7 @@
 # Review checklist mid project
 
 Tanggal: 27 Oktober 2026.
-Project: `07-week-7-clean-architecture/week7_clean_notes`.
+Project: `07-week-7-clean-architecture`.
 Target: kesiapan paruh semester, bukan menambah fitur baru.
 
 ## 1. Audit riwayat sebelum perbaikan
@@ -98,7 +98,7 @@ Issue dan PR sudah dipublikasikan; template tersedia di
 
 ## 5. Bukti mesin
 
-Dijalankan di `07-week-7-clean-architecture/week7_clean_notes`:
+Dijalankan di `07-week-7-clean-architecture`:
 
 ```text
 flutter analyze
