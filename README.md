@@ -28,7 +28,7 @@ Repository praktikum Pemrograman Mobile.
 │   ├── test/
 │   ├── docs/
 │   └── screenshots/
-└── 10-week-10-ai-feature-integration/
+└── 11-week-11-performance-optimization/
     ├── README.md
     ├── lib/
     ├── test/
@@ -54,5 +54,6 @@ Setiap folder mingguan berisi satu aplikasi Flutter langsung di root folder
 | 8 | [Mid Project Review & Code Review](08-week-8-mid-project-review/README.md) |
 | 9 | [AI-Assisted Development / Vibe Coding](09-week-9-ai-assisted-development/README.md) |
 | 10 | [Integrasi Fitur AI](10-week-10-ai-feature-integration/README.md) |
+| 11 | [Optimasi Performa](11-week-11-performance-optimization/README.md) |
 
 Setiap folder mingguan berisi laporan, kode Flutter, pengujian, dan screenshot hasil praktikum. Petunjuk menjalankan proyek tersedia pada README masing-masing minggu.

@@ -15,6 +15,7 @@ jobs:
           - 07-week-7-clean-architecture
           - 09-week-9-ai-assisted-development
           - 10-week-10-ai-feature-integration
+          - 11-week-11-performance-optimization
     defaults:
       run:
         working-directory: ${{ matrix.project }}
